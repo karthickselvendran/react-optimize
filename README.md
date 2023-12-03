@@ -1,1 +1,3 @@
 Notes:
+
+-optimize performance
