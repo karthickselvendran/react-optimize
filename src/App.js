@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <Header />
       <h1>
-        <u>memo, useMemo, useCallback Example</u>{" "}
+        <u>memo, useCallback, useMemo Example</u>{" "}
       </h1>
       <CountComponent count={count} increment={increment} />
       <hr />
