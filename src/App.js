@@ -19,6 +19,13 @@ const users = [
   },
 ];
 
+const findUsers = (id) => {
+  // for (let i = 0; i <= 100000; i++) {
+  //   console.log(i);
+  // }
+  return users.find((user) => user.id === id);
+};
+
 function App() {
   const [count, setCount] = useState(0);
   const [cart, setCart] = useState(0);
@@ -26,14 +33,15 @@ function App() {
   const increment = useCallback(() => {
     console.log("increment func firing--");
     setCount((prevCount) => prevCount + 1);
-  }, [count]);
+  }, []);
 
   const addToCart = useCallback(() => {
     console.log("addToCart func firing--");
     setCart((prevCart) => prevCart + 1);
-  }, [cart]);
+  }, []);
 
-  const selectedUser = users.find((user) => user.id === 2);
+  // const selectedUser = { name: "one" };
+  const selectedUser = findUsers(1);
 
   return (
     <div className="App">
