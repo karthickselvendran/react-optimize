@@ -8,4 +8,4 @@ Notes:
 
 pending:
 
--useMemo: needs to check and practice.
+-useMemo: needs to analyse and update the logic
