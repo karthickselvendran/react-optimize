@@ -6,6 +6,8 @@ Notes:
 
 -useCallback: to memoize function we can use this. Will trigger function if parameter changes only
 
+-useMemo: to optimize
+
 pending:
 
--useMemo: needs to analyse and update the logic
+-usecallback - check why warning shows when put value in dependency array
