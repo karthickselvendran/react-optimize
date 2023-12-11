@@ -32,12 +32,14 @@ function App() {
 
   const increment = useCallback(() => {
     console.log("increment func firing--");
-    setCount((prevCount) => prevCount + 1);
+    setCount(count + 1);
+    // setCount((prevCount) => prevCount + 1);
   }, [count]);
 
   const addToCart = useCallback(() => {
     console.log("addToCart func firing--");
-    setCart((prevCart) => prevCart + 1);
+    setCart(cart + 1);
+    // setCart((prevCart) => prevCart + 1);
   }, [cart]);
 
   // const selectedUser = { name: "one" };
